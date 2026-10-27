@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#172b3b">
+  <meta name="description" content="GeneratorGuard generator alarm dashboard">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <title>GeneratorGuard</title>
+</head>
+<body>
+  <header class="top">
+    <div class="brandmark">⚡</div>
+    <div><h1>GeneratorGuard</h1><p>Generator monitoring & alerts</p></div>
+    <span class="pill">APP PREVIEW</span>
+  </header>
+  <main>
+    <section class="notice">
+      <strong>Setup status: not connected yet</strong>
+      <p>This dashboard is the app front end. Connect Gmail → Make → your cloud alert Worker before it can send real notifications.</p>
+    </section>
+    <section class="stats">
+      <article><span>Email monitoring</span><strong>Not connected</strong></article>
+      <article><span>Alert contacts</span><strong>3 planned</strong></article>
+    </section>
+    <section class="panel">
+      <div class="panelhead"><h2>Alarm activity</h2><button id="clearBtn" class="quiet">Clear demo log</button></div>
+      <p id="empty" class="muted">No alarm events recorded in this browser yet.</p>
+      <div id="events" class="events"></div>
+    </section>
+    <section class="panel">
+      <h2>Notification plan</h2>
+      <div class="contact"><span class="num">1</span><div><strong>Contact 1</strong><small>SMS + automated call</small></div><span class="lock">Server secured</span></div>
+      <div class="contact"><span class="num">2</span><div><strong>Contact 2</strong><small>SMS + automated call</small></div><span class="lock">Server secured</span></div>
+      <div class="contact"><span class="num">3</span><div><strong>Contact 3</strong><small>SMS + automated call</small></div><span class="lock">Server secured</span></div>
+      <p class="muted small">Phone numbers belong in private cloud settings, not in this public app.</p>
+    </section>
+    <section class="panel">
+      <h2>Next steps</h2>
+      <ol>
+        <li>Publish this folder using GitHub Pages.</li>
+        <li>Create the Cloudflare Worker using the included server file.</li>
+        <li>Connect Gmail to Make and filter WebSupervisor alarm emails.</li>
+        <li>Test all three contacts before relying on alerts.</li>
+      </ol>
+      <p class="muted small">This is an app starter, not a certified safety or generator-control system. Keep WebSupervisor's native alerts enabled.</p>
+    </section>
+  </main>
+  <footer>GeneratorGuard · Starter version</footer>
+  <script src="./app.js"></script>
+</body>
+</html>
